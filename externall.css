@@ -1,0 +1,93 @@
+body {
+    background-color:rgb(255, 255, 255);
+}
+.fContainer {
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    height: 25vh;
+    background-color:white;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 900px;
+    height: 60px;
+    background-color:rgb(72, 210, 30);
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.firstname {
+    color:azure;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.lastname {
+    color:rgb(233, 236, 233);
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 4px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation>li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.navigation>li>a {
+    color:azure;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.navigation>li>a:hover {
+    color:black;
+    transition:all .3s ease-in-out;
+
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800px;
+    font-size: 45px;
+    margin-bottom: 10px;
+    color:rgb(44, 42, 165);
+    width: 100%;
+    line-height: 50px;
+}
+
+img {
+    width: 540px;
+    height: 540px;
+    border: 2px;
+}
