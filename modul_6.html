@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript Library</title>
+<script src="https://code.jquery.com/jquery-2.2.0.Min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<style>table{width:100%;border-collapse:collapse}th,td{padding:8px;text-align:left;border-bottom:1px solid #ddd}tr:hover{background-color:#ff0}.highlight{background-color:#fff}body{background-color:#f5f5dc}</style>
+</head>
+<body>
+<h1 style="text-align: center; color: rgba(47, 0, 255, 0.845); background: rgb(255, 0, 195);">Perpustakaan Suka Baca</h1>
+<h3 style="text-align: center; color: black;">Selamat datang di Perpustakaan Suka Bca. Dibawah ini merupakan beberapa koleksi buku yang dimiliki oleh Pepustakaan Suka Baca.<br> Ketik judul buku pada kolom Search untuk mempercepat pencarian!</h3>
+<table id="library-table">
+<thead>
+<tr>
+<th>Judul Buku</th>
+<th>Penulis</th>
+<th>Tahun Terbit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sebuah Seni Untuk Bersikap Bodo Amat : Pendekatan Yang Waras Demi Menjalani Hidup Yang Baik</td>
+<td>Mark Manson</td>
+<td>2016</td>
+</tr>
+<tr>
+<td>Manajemen Koperasi Indonesia</td>
+<td>Edilius Sudarsono</td>
+<td>1994</td>
+</tr>
+<tr>
+<td>Aku Ini Binatang Jalang</td>
+<td>Chairil Anwar</td>
+<td>1988</td>
+</tr>
+<tr>
+<td>Bicara Itu Ada Seninya : Rahasia Komunikasi yang Efektif</td>
+<td>Oh Su Hyang</td>
+<td>2018</td>
+</tr>
+<tr>
+<td>Filosofi Teras : Filsafat Yunani-Romawi Kuno untuk Mental Tangguh Masa Kini</td>
+<td>Henry Manampiring</td>
+<td>2019</td>
+</tr>
+<tr>
+<td>Akidah Tauhid Ibn Taymiyyah</td>
+<td>Amal Fathullah Zarkasyi</td>
+<td>2014</td>
+</tr>
+<tr>
+<td>Rich Dad Poor Dad</td>
+<td>Robert Kiyosaki</td>
+<td>1997</td>
+</tr>
+<tr>
+<td>How to Respect Myself</td>
+<td>Yoon Hong Gyun</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Jika Kita Tak Pernah Jadi Apa-Apa</td>
+<td>Alvi Syahrin</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>The Public Library</td>
+<td>Robert Dawson</td>
+<td>2014</td>
+</tr>
+<tr>
+<td>Seni Hidup Minimalis</td>
+<td>Francine Jay</td>
+<td>2019</td>
+</tr>
+<tr>
+<td>Manusia dalam Pandangan Psikologi </td>
+<td>Pasiska, M.A</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Bicara Itu Ada Seninya</td>
+<td>Oh Su Hyang</td>
+<td>2018</td>
+</tr>
+</tbody>
+</table>
+<script>$(document).ready(function(){$("#library-table").DataTable({paging:false,searching:true,ordering:true});$("tr").mouseover(function(){$(this).addClass("highlight");});$("tr").mouseout(function(){$(this).removeClass("highlight");});$("th").addClass("animate_animated animate_bounce");});</script>
+</body>
+</html>
